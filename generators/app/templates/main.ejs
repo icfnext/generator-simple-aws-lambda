@@ -1,0 +1,34 @@
+
+<% if ( batchEvent ) { %>
+function processRecord( record, event ) {
+    /* do something interesting and return a promise */
+    return Promise.resolve();
+}
+<% } else { %>
+function processEvent( event ) {
+    /* do something interesting and return a promise */
+    return Promise.resolve();
+}
+<% } %>
+
+exports.handler = function( event, context ) {
+    <% if ( batchEvent ) { %>
+    Promise.all( event.Records.map( function( currentEvent ) {
+        processRecord( currentEvent, event );
+    } ) )
+        .then( function( result ) {
+            context.succeed( result );
+        } )
+        .catch( function( e ) {
+            context.fail( e.toString() );
+        } );
+    <% } else { %>
+    processEvent( event )
+        .then( function( result ) {
+            context.succeed( result );
+        } )
+        .catch( function( e ) {
+            context.fail( e.toString() );
+        } );
+    <% } %>
+};

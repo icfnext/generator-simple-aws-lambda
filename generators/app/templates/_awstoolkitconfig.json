@@ -1,0 +1,10 @@
+{
+  "name": "<%= name %>",
+  "handler": "<%= name %>.handler",
+  "region": "<%= region %>",
+  "role": "<%= roleArn %>",
+  "description": "<%= description %>",
+  "ignores": [
+    "test/**/*"
+  ]
+}

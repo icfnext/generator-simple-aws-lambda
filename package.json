@@ -1,0 +1,20 @@
+{
+  "name": "generator-simple-aws-lambda",
+  "version": "0.1.0",
+  "description": "Yeoman generator for a simple AWS Lambda using Mocha for automated testing and the aws-lambda-toolkit for deployment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Paul Michelotti",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "yeoman-generator": "^1.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "version": "<%= initialVersion %>",
+  "author": "<%= author %>",
+  "scripts": {
+    "test": "mocha",
+    "deploy": "node tasks.js deploy",
+    "publish": "node tasks.js publish"
+  }
+}
