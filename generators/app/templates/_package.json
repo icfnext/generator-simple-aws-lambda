@@ -2,6 +2,7 @@
   "name": "<%= name %>",
   "description": "<%= description %>",
   "version": "<%= initialVersion %>",
+  "main": "<%= name %>.js",
   "author": "<%= author %>",
   "scripts": {
     "test": "mocha",
