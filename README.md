@@ -10,7 +10,7 @@ If you've not done so previously you'll also need to [install Yeoman](http://yeo
 
 ## Usage
 
-`yo generator-simple-aws-lambda`
+`yo simple-aws-lambda`
 
 ### Inputs
 
